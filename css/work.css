@@ -1,0 +1,62 @@
+/* Section styling */
+.work-section {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background-color: #333;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Gallery grid */
+.work-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.work-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.work-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.work-item:hover img {
+  transform: scale(1.08); /* zoom on hover */
+}
+
+/* 📱 Responsive breakpoints */
+@media (max-width: 1024px) {
+  .work-gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .work-gallery {
+    grid-template-columns: 1fr; /* 1 column full width on mobile */
+  }
+}

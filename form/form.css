@@ -1,0 +1,167 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Default Mobile Container */
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* Input Styling */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    font-size: 15px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #0D6EFD;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+button:hover {
+    background: orange;
+}
+
+/* Loader Animation */
+.loader {
+    display: none;
+    width: 18px;
+    height: 18px;
+    border: 3px solid #fff;
+    border-top: 3px solid #f1c40f;
+    border-radius: 50%;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rotate {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success & Error Messages */
+.success {
+    color: green;
+    background: #d4edda;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.error {
+    color: red;
+    background: #f8d7da;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* 🔥 Responsive Design for Larger Screens */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 900px;
+        display: flex;
+        text-align: left;
+        padding: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+        width: 50%;
+        padding-right: 40px;
+    }
+
+    .contact-info h2 {
+        font-size: 28px;
+        color: #333;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+        color: #555;
+        line-height: 1.5;
+    }
+
+    /* Form Section */
+    .form-container {
+        width: 50%;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 12px;
+    }
+}

@@ -1,0 +1,71 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+.logo{
+    font-size: 2em ;
+    user-select: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    padding: 2rem;
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.services-section {
+    padding: 2rem;
+    background-color: #ecf0f1;
+}
+
+.service-category {
+    background: linear-gradient(to right, #3377d7, #2ac9a4);
+    color: white;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+}
+
+.footer-section {
+    background: linear-gradient(to right, #0691db, #562ec4);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.footer-section a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+    }
+    .nav-links a{
+        padding: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .hero-section, .services-section, .footer-section {
+        padding: 1rem;
+    }
+}

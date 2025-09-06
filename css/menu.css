@@ -1,0 +1,47 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  /* Ensures items move to next line if needed */
+    background: transparent;
+    padding: 15px;
+    gap: 8px;  /* Adds spacing between buttons */
+}
+
+.navbar a {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #3E6FF4;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    white-space: nowrap; /* Prevents text wrapping */
+}
+
+.navbar a:hover {
+    background-color: #ff4757;
+}
+
+/* Mobile devices - max 768px */
+@media (max-width: 768px) {
+    .navbar {
+        gap: 5px; /* Reduce spacing slightly */
+    }
+
+    .navbar a {
+        padding: 8px 16px; /* Reduce padding */
+        font-size: 14px; /* Slightly smaller text */
+    }
+}
+
+/* Very small devices (Instagram in-app browser, etc.) */
+@media (max-width: 390px) {
+    .navbar {
+        gap: 4px; /* Reduce spacing further */
+    }
+
+    .navbar a {
+        padding: 6px 14px; /* Make buttons slightly smaller */
+        font-size: 13px; /* Adjust text size */
+    }
+}

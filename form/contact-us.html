@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Contact Info Section for Larger Screens -->
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Need help? Get in touch with us and we’ll be happy to assist you.</p>
+            <p>If phone number unavailable or switched off please leave a message.</p>
+            <p><strong>Email:</strong> amanghostvilla@gmail.com</p>
+            <p><strong>Phone:</strong> +91 9565194075</p>
+            <p><strong>Address:</strong> Varanasi, India</p>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required placeholder="Write your message here..."></textarea>
+                </div>
+
+                <button type="submit">
+                    <span class="btn-text">Send Message</span>
+                    <div class="loader"></div>
+                </button>
+
+                <p id="statusMessage"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>

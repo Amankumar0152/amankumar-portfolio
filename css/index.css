@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.dark-mode{
+    color: #f1f1f1;
+    background-color: #444;
+}
+
+.profile-section h1{
+    position: relative;
+    width: max-content;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.profile-section img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.profile-section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 3em;
+    color: #3E6FF4;
+}
+.dark-mode .profile-section h1 {
+    color: #f1f1f1;
+}
+.section {
+    padding: 20px;
+    text-align: center;
+}
+.about {
+    background-color: #fff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.dark-mode .about {
+    background-color: #333;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.skills div {
+    flex-basis: 45%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.projects{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+.projects div{
+    flex-basis: 45%;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s color 0.3s;
+}
+.dark-mode .skills div, .dark-mode .projects div {
+    background-color: #333;
+}
+.contact {
+    padding: 20px;
+    text-align: center;
+}
+.contact p a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #6DB33F;
+}
+.contact img {
+    width: 45%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.dark-mode-toggle {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    margin: 30px auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+.dark-mode-toggle:hover{
+    background-color: #465D9C;
+}
+
+/* When dark mode is active */
+.dark-mode #contact-form input,
+.dark-mode #contact-form textarea {
+  background-color: #444;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.dark-mode #contact-form input::placeholder,
+.dark-mode #contact-form textarea::placeholder {
+  color: #aaa; /* light grey for readability */
+}
+
+.dark-mode #contact-form button {
+  background-color: #444;
+  color: #fff;
+}
+
+
+@media (max-width: 768px) {
+    .skills div, .projects div {
+        flex-basis: 100%;
+        margin: 10px 0;
+    }
+    .profile-section {
+        flex-direction: column;
+    }
+    .profile-section img {
+        width: 45%;
+        height: auto;
+    }
+    .contact img {
+        width: 100%;
+    }
+}
