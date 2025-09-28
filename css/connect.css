@@ -49,6 +49,9 @@ header h1{
     color: greenyellow;
 
 }
+.css:hover{
+    color: violet;
+}
 .contents h4{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -70,10 +73,13 @@ header h1{
     display: flex;
     align-items:center;
     justify-content: center;
-    background-color: #6c7c8b;
+    padding: 10px;
     font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+}
+.code h4:hover{
+    background-color: #6c7c8b;
 }
 .code h3{
     color:greenyellow;
