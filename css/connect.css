@@ -104,7 +104,7 @@ header h1{
     text-align: center;
 }
 .code > h2> a:hover{
-    color: yellowgreen;
+    color: orchid;
 }
 @media only screen and (max-width:1080px){
     .code h3{
