@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/animations/hover-btn.css">
-    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form2.css">
     <link rel="stylesheet" href="css/work.css">
     <meta name="theme-color" content="#3E6FF4">
     <!-- AOS CSS -->
@@ -121,18 +121,32 @@
     <img data-aos="fade-left" src="work-img/hello-cat.jpg" alt="Contact Image">
 </section>
 
-<div class="form-container">
+<!-- <div class="form-container">
   <form id="contact-form">
     <input data-aos="fade-down" type="text" name="name" placeholder="Your Good Name" required>
     <input data-aos="fade-down" type="email" name="email" placeholder="Best Email to reach you" required>
     <textarea data-aos="fade-up" name="message" rows="5" placeholder="Write your thoughts" required></textarea>
 
-    <!-- Hidden field: auto-detect current page URL -->
     <input type="hidden" name="source" id="source">
 
     <button data-aos="fade-down" class="hover-btn" type="submit" id="send-btn">Send</button>
   </form>
-</div>
+</div> -->
+
+<main class="contact-container">
+    <h1>Contact Us</h1>
+    <form id="contact-form">
+  <input type="text" name="name" placeholder="Your Name" required />
+  <input type="email" name="email" placeholder="Your Email" required />
+  <input type="tel" name="phone" placeholder="Your Phone Number" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+
+  <!-- hidden for user -->
+   <input type="hidden" name="source" value="Transforming.earth Contact Page" />
+  <button type="submit">Send Message</button>
+  <p id="form-status"></p>
+    </form>
+  </main>
 
 
 <!-- dark theme Button -->
