@@ -28,10 +28,6 @@ button {
   cursor: pointer;
 }
 
-button:hover {
-  background: #1b5e20;
-}
-
 #form-status {
   margin-top: 0.5rem;
   font-weight: bold;
