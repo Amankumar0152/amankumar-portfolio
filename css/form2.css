@@ -19,8 +19,6 @@ input, textarea {
 }
 
 button {
-  background: #2e7d32;
-  color: white;
   border: none;
   padding: 0.75rem;
   font-size: 1rem;
