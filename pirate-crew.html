@@ -197,6 +197,9 @@
 </div>
 
 <script>
+  function closeOverlay() {
+    document.getElementById('overlay').classList.remove('show');
+  }
   async function submitForm() {
   const name   = document.getElementById('name').value.trim();
   const swim   = document.querySelector('input[name="swim"]:checked');
