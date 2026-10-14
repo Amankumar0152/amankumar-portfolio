@@ -106,9 +106,12 @@ header h1{
 .code > h2> a:hover{
     color: orchid;
 }
-@media only screen and (max-width:1080px){
+@media only screen and (max-width:768px){
     .code h3{
         font-family: Arial, Helvetica, sans-serif;
+    }
+    .code a{
+        font-size: 12px;
     }
     .binary h1{
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
