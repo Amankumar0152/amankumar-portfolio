@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="theme-color" content="#0a0a0c">
+  <title>Operation Gold Vault - Crew Recruitment</title>
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🕵️%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/bankrob.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="laser l1" aria-hidden="true"></div>
+  <div class="laser l2" aria-hidden="true"></div>
+  <div class="laser l3" aria-hidden="true"></div>
+
+  <span class="badge-top">STRICTLY CONFIDENTIAL</span>
+  <span class="hero-icon" aria-hidden="true">🕵️</span>
+  <h1>Operation <span class="gold">Gold Vault</span></h1>
+  <p class="subtitle">We need 5 elite specialists. Amateurs, stay home.</p>
+  <div class="payout">
+    💰 Payout: $2,000,000 each
+    <small>(only if the plan works, obviously)</small>
+  </div>
+  <p class="fun-note">Just for fun. 100% fictional. No real vaults were harmed.</p>
+</section>
+
+<main class="main">
+
+  <!-- STEPS -->
+  <section class="how" aria-label="How to join">
+    <ol class="steps">
+      <li><span class="num">1</span><span>Read the briefing</span></li>
+      <li><span class="num">2</span><span>Submit your profile</span></li>
+      <li><span class="num">3</span><span>Wait for our call 📞</span></li>
+    </ol>
+  </section>
+
+  <!-- BRIEFING -->
+  <section class="briefing">
+    <div class="sec-title"><h2>📁 Mission Briefing</h2></div>
+    <p class="section-sub">Read carefully. This message will not self-destruct, but still.</p>
+
+    <div class="info-grid">
+      <article class="info-card">
+        <span class="info-icon" aria-hidden="true">🏦</span>
+        <h3>The Target</h3>
+        <p>One very big vault. One very tired security guard.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-icon" aria-hidden="true">⏱️</span>
+        <h3>The Window</h3>
+        <p>Exactly 7 minutes. Not 8. Seven.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-icon" aria-hidden="true">🤫</span>
+        <h3>The Rule</h3>
+        <p>No names, no drama, no selfies during the job.</p>
+      </article>
+      <article class="info-card">
+        <span class="info-icon" aria-hidden="true">🚗</span>
+        <h3>The Exit</h3>
+        <p>Fast car, clean route, nobody looks back.</p>
+      </article>
+    </div>
+  </section>
+
+  <div class="divider" aria-hidden="true"><span>🔒</span></div>
+
+  <!-- APPLICATION -->
+  <section class="apply" id="apply">
+    <div class="sec-title"><h2>🧾 Your Profile</h2></div>
+    <p class="section-sub">The Boss reads every file. Mostly.</p>
+
+    <form class="form-card" id="crew-form" onsubmit="submitForm(event)" novalidate>
+      <p class="form-note">All questions are required, except notes.</p>
+
+      <div class="field">
+        <label class="flabel" for="codename">Your name <small>(codename is cooler)</small></label>
+        <input type="text" id="codename" maxlength="60" placeholder="Choose name as a Country Name: " autocomplete="off">
+      </div>
+
+      <fieldset class="field">
+        <legend class="flabel">Wall jumping skill</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="wall" value="parkour"><span>Parkour pro, walls are stairs 🧗</span></label>
+          <label class="chip"><input type="radio" name="wall" value="ok"><span>Can climb a 6 ft wall</span></label>
+          <label class="chip"><input type="radio" name="wall" value="ladder"><span>Only with a ladder</span></label>
+          <label class="chip"><input type="radio" name="wall" value="none"><span>I use the gate like a normal person</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="flabel">Running speed</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="run" value="flash"><span>Faster than a police siren ⚡</span></label>
+          <label class="chip"><input type="radio" name="run" value="fast"><span>Fast, 100m in 12 sec</span></label>
+          <label class="chip"><input type="radio" name="run" value="jog"><span>Jogger, I have stamina</span></label>
+          <label class="chip"><input type="radio" name="run" value="bus"><span>I run only when I miss the bus</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="flabel">Night vision</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="night" value="owl"><span>Can see in full darkness 🦉</span></label>
+          <label class="chip"><input type="radio" name="night" value="good"><span>Good, with a little moonlight</span></label>
+          <label class="chip"><input type="radio" name="night" value="phone"><span>Only with phone torch</span></label>
+          <label class="chip"><input type="radio" name="night" value="bump"><span>I hit the wall in my own room</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="flabel">Lock and safe cracking</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="lock" value="master"><span>Any lock opens in 30 seconds 🔓</span></label>
+          <label class="chip"><input type="radio" name="lock" value="hacker"><span>I hack digital locks</span></label>
+          <label class="chip"><input type="radio" name="lock" value="hammer"><span>Hammer is also a key</span></label>
+          <label class="chip"><input type="radio" name="lock" value="forgot"><span>I forget my own phone password</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="flabel">Police arrives early. Your reaction?</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="pressure" value="ice"><span>Calm. Plan B is ready 🧊</span></label>
+          <label class="chip"><input type="radio" name="pressure" value="talk"><span>I talk my way out</span></label>
+          <label class="chip"><input type="radio" name="pressure" value="hide"><span>Hide in the nearest box</span></label>
+          <label class="chip"><input type="radio" name="pressure" value="panic"><span>Panic and call my mom</span></label>
+        </div>
+      </fieldset>
+
+      <fieldset class="field">
+        <legend class="flabel">Your role in the crew</legend>
+        <div class="chips">
+          <label class="chip"><input type="radio" name="role" value="mastermind"><span>Mastermind 🧠</span></label>
+          <label class="chip"><input type="radio" name="role" value="hacker"><span>Hacker 💻</span></label>
+          <label class="chip"><input type="radio" name="role" value="driver"><span>Getaway driver 🏎️</span></label>
+          <label class="chip"><input type="radio" name="role" value="muscle"><span>Muscle 💪</span></label>
+        </div>
+      </fieldset>
+
+      <div class="field">
+        <label class="flabel" for="exp">Notes <small>(optional)</small></label>
+        <textarea id="exp" placeholder="Watched Money Heist 3 times? Played GTA? All valid experience."></textarea>
+      </div>
+
+      <button class="submit-btn" type="submit">🔐 Count Me In, Boss!</button>
+      <p class="form-msg" id="form-msg" role="alert" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<!-- SUCCESS OVERLAY -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" aria-labelledby="success-title">
+  <div class="success-card">
+    <span class="big-icon" aria-hidden="true">🕶️</span>
+    <h2 id="success-title">Welcome to the Crew, <span class="success-name" id="successName">Agent</span>!</h2>
+    <p id="successMsg">Your profile has been received and shredded for security.</p>
+    <p class="success-small">We will contact you. Do not call us.</p>
+    <button class="close-btn" type="button" onclick="closeOverlay()">Back to hideout</button>
+  </div>
+</div>
+
+<script>
+  function closeOverlay() {
+    document.getElementById('overlay').classList.remove('show');
+  }
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeOverlay();
+  });
+  document.getElementById('overlay').addEventListener('click', function (e) {
+    if (e.target === this) closeOverlay();
+  });
+
+  function showMsg(text, target) {
+    document.getElementById('form-msg').textContent = text;
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+
+  async function submitForm(e) {
+    e.preventDefault();
+
+    const nameInput = document.getElementById('codename');
+    const name = nameInput.value.trim();
+    const exp  = document.getElementById('exp').value.trim();
+
+    if (!name) {
+      showMsg('🔒 Every agent needs a name!', nameInput);
+      nameInput.focus();
+      return;
+    }
+
+    const data = {};
+    data['_subject'] = 'New Heist Crew Application: ' + name;
+    data[document.querySelector('label[for="codename"]').textContent.trim()] = name;
+
+    let funny = false;
+    const fieldsets = document.querySelectorAll('#crew-form fieldset.field');
+    for (const fs of fieldsets) {
+      const question = fs.querySelector('legend').textContent.trim();
+      const picked   = fs.querySelector('input[type="radio"]:checked');
+      if (!picked) {
+        showMsg('🔒 Please answer: ' + question, fs);
+        return;
+      }
+    data[question] = picked.nextElementSibling.textContent.trim();
+      if (picked.dataset.fun) funny = true;
+    }
+
+    data[document.querySelector('label[for="exp"]').textContent.trim()] = exp || 'None mentioned';
+
+    showMsg('', null);
+    const btn = document.querySelector('.submit-btn');
+    btn.textContent = '⏳ Sending to Boss...';
+    btn.disabled = true;
+
+    try {
+      const res = await fetch('https://formspree.io/f/xbdvbvyq', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (res.ok) {
+        document.getElementById('successName').textContent = name;
+        document.getElementById('successMsg').textContent = funny
+          ? 'Boss saw your funny answer. You are officially NOT rejected. Bring snacks tomorrow. 🍿'
+          : 'Your profile has been received and shredded for security.';
+        document.getElementById('overlay').classList.add('show');
+        document.getElementById('crew-form').reset();
+      } else {
+        showMsg('Something went wrong. Try again, agent!', null);
+      }
+    } catch (err) {
+      showMsg('Network error. The line is being traced!', null);
+    }
+
+    btn.textContent = '🔐 Count Me In, Boss!';
+    btn.disabled = false;
+  }
+</script>
+
+</body>
+</html>
